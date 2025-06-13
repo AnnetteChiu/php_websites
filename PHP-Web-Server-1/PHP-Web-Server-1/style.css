@@ -1,0 +1,212 @@
+
+/* Custom styles for improved contact form design */
+body {
+    background: linear-gradient(135deg, #aab6ee 0%, #1636da 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.container {
+    max-width: 600px;
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin-top: 30px;
+    backdrop-filter: blur(10px);
+}
+
+.page-header {
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+.form-control {
+    border: 2px solid #e9ecef;
+    border-radius: 8px;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f8f9fa;
+}
+
+.form-control:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+    background-color: #fff;
+}
+
+.control-label {
+    font-weight: 600;
+    color: #495057;
+    margin-bottom: 8px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(45deg, #5a6fd8, #6a4190);
+}
+
+.alert {
+    border-radius: 8px;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.alert-success {
+    background: linear-gradient(45deg, #56ab2f, #a8e6cf);
+    color: #2d5016;
+}
+
+.alert-danger {
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: #fff;
+}
+
+.text-danger {
+    color: #dc3545 !important;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+/* Mobile-first improvements */
+.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+/* Improved touch targets for mobile */
+.btn-primary {
+    min-height: 44px; /* Apple's recommended touch target size */
+    touch-action: manipulation;
+}
+
+/* Better text readability on mobile */
+@media (max-width: 768px) {
+    .text-danger {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+}
+
+/* Enhanced mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px 0;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .form-container {
+        padding: 25px 20px;
+        margin: 10px 0;
+        border-radius: 10px;
+    }
+    
+    .page-header {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+    
+    .form-horizontal .col-sm-2,
+    .form-horizontal .col-sm-10 {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .col-sm-2 {
+        margin-bottom: 8px;
+    }
+    
+    .col-sm-offset-2 {
+        margin-left: 0;
+    }
+    
+    .form-control {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 14px 15px;
+        margin-bottom: 5px;
+    }
+    
+    .btn-primary {
+        width: 100%;
+        padding: 15px 30px;
+        font-size: 18px;
+        margin-top: 10px;
+    }
+    
+    .control-label {
+        font-size: 16px;
+        margin-bottom: 6px;
+    }
+    
+    .alert {
+        padding: 12px 15px;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px 15px;
+        margin: 5px 0;
+    }
+    
+    .page-header {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .form-control {
+        padding: 12px 12px;
+    }
+    
+    .btn-primary {
+        padding: 14px 25px;
+    }
+}</media>
+
+/* Input animation effects */
+.form-control:not(:placeholder-shown) {
+    background-color: #fff;
+}
+
+.form-group {
+    position: relative;
+}
+
+/* Custom styling for the anti-spam question */
+.form-group:nth-child(4) .control-label {
+    color: #667eea;
+    font-weight: 700;
+}
